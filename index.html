@@ -28,12 +28,14 @@
             <button type="submit">Enviar</button>
         </form>
     </section>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="./js/jquery.mask.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
     <script>
-        $('#cpf').mask('000.000.000-00')
-        $('#telefone').mask('(00) 00000-0000')
-        $('#cep').mask('00000-000')
+        $(document).ready(function() {
+            $('#cpf').mask('000.000.000-00')
+            $('#telefone').mask('(00) 00000-0000')
+            $('#cep').mask('00000-000')
+        })
     </script>
 </body>
 </html>
